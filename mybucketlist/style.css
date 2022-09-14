@@ -1,0 +1,118 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.nav{
+    display: flex;
+    min-height: 55px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F55A5A;
+}
+
+.nav--title{
+    color:white;
+    font-size: 15px;
+    font-weight: 900;
+    padding:10px;
+}
+
+.card-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:60px;
+    margin:40px 0px;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width:600px;
+    border-radius: 5px;
+    margin:30px;
+    flex-grow: 1;
+    transition: transform 0.5s;
+}
+.card:hover{
+    transform:scale(1.05);
+}
+
+.card--img{
+    width:35%;
+    max-height:250px;
+    border-radius: 5px;
+    height: auto;
+}
+
+.card--details{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:10px;
+}
+
+.card--marker{
+    width:10px;
+    height:14px;
+}
+
+.card--location{
+    color:#2B283A;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.card--maplink{
+    color:#ACABAE;
+    margin:0px 5px;
+}
+
+.card--location--country{
+    margin:0px 5px;
+}
+
+.card--place{
+    font-size: 27px;
+    margin:10px 0px;
+}
+
+.card--timeline{
+    font-weight: bolder;
+    padding:10px 0px;
+}
+.card--description{
+    word-spacing:4px;
+}
+.footer{
+    display: flex;
+    min-height: 55px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F55A5A;
+    color:white;
+    font-size: 15px;
+}
+
+@media only screen and (max-width:600px){
+    .card{
+        flex-direction: column;
+        transition:none;
+    }
+    .card:hover{
+        transform:none;
+    }
+    .card--img{
+        width:100%;
+    }
+}
